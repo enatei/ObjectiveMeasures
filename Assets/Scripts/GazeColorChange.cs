@@ -10,22 +10,22 @@ public class GazeColorChanger : MonoBehaviour
     void Awake()
     {
         meshRenderer = GetComponent<MeshRenderer>();
-        if (meshRenderer != null)
-            originalColor = meshRenderer.material.color;
+        //if (meshRenderer != null)
+            //originalColor = meshRenderer.material.color;
     }
 
     // Wird beim Gaze Hover aufgerufen
     public void OnGazeEnter()
     {
-        if (meshRenderer != null)
-            meshRenderer.material.color = gazeColor;
+        //if (meshRenderer != null)
+            //meshRenderer.material.color = gazeColor;
     }
 
     // Wird beim Gaze Hover verlassen aufgerufen
     public void OnGazeExit()
     {
-        if (meshRenderer != null)
-            meshRenderer.material.color = originalColor;
+        //if (meshRenderer != null)
+            //meshRenderer.material.color = originalColor;
     }
 }
 
