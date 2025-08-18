@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "D:\\ObjectiveMeasures\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|d:\\objectivemeasures\\assets\\scripts\\gazeinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gazeinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|d:\\objectivemeasures\\assets\\updaterightpupil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\updaterightpupil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|d:\\objectivemeasures\\assets\\scripts\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|d:\\objectivemeasures\\assets\\updateleftgaze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\updateleftgaze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ObjectiveMeasures\\Library\\PackageCache\\com.htc.upm.vive.openxr@df2fc918e700\\Runtime\\Features\\EyeTracker\\ViveEyeTracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.htc.upm.vive.openxr@df2fc918e700\\Runtime\\Features\\EyeTracker\\ViveEyeTracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|D:\\ObjectiveMeasures\\assets\\actionsetenable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\actionsetenable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|D:\\ObjectiveMeasures\\assets\\scripts\\gazecolorchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gazecolorchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|D:\\ObjectiveMeasures\\assets\\scripts\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ObjectiveMeasures\\Assets\\GazeInteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\GazeInteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|D:\\ObjectiveMeasures\\assets\\gazelinerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\gazelinerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ObjectiveMeasures\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@9b07900cb163\\Runtime\\UI\\LazyFollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.xr.interaction.toolkit@9b07900cb163\\Runtime\\UI\\LazyFollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|D:\\ObjectiveMeasures\\assets\\scripts\\gazeinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gazeinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +46,117 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Interactable.cs",
-              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\Scripts\\Interactable.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Interactable.cs",
-              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\Scripts\\Interactable.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Interactable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAvAAAA",
+              "DocumentIndex": 0,
+              "Title": "UpdateRightPupil.cs",
+              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\UpdateRightPupil.cs",
+              "RelativeDocumentMoniker": "Assets\\UpdateRightPupil.cs",
+              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\UpdateRightPupil.cs*",
+              "RelativeToolTip": "Assets\\UpdateRightPupil.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T10:03:19.447Z",
+              "WhenOpened": "2025-08-18T11:18:11.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GazeInteractor.cs",
-              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\Scripts\\GazeInteractor.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GazeInteractor.cs",
-              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\Scripts\\GazeInteractor.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GazeInteractor.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "actionSetEnable.cs",
+              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\actionSetEnable.cs",
+              "RelativeDocumentMoniker": "Assets\\actionSetEnable.cs",
+              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\actionSetEnable.cs",
+              "RelativeToolTip": "Assets\\actionSetEnable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T09:45:20.447Z",
+              "WhenOpened": "2025-08-18T10:16:26.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateLeftGaze.cs",
+              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\UpdateLeftGaze.cs",
+              "RelativeDocumentMoniker": "Assets\\UpdateLeftGaze.cs",
+              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\UpdateLeftGaze.cs",
+              "RelativeToolTip": "Assets\\UpdateLeftGaze.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T09:40:36.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GazeInteractor.cs",
-              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\GazeInteractor.cs",
-              "RelativeDocumentMoniker": "Assets\\GazeInteractor.cs",
-              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\GazeInteractor.cs",
-              "RelativeToolTip": "Assets\\GazeInteractor.cs",
+              "Title": "ViveEyeTracker.cs",
+              "DocumentMoniker": "D:\\ObjectiveMeasures\\Library\\PackageCache\\com.htc.upm.vive.openxr@df2fc918e700\\Runtime\\Features\\EyeTracker\\ViveEyeTracker.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.htc.upm.vive.openxr@df2fc918e700\\Runtime\\Features\\EyeTracker\\ViveEyeTracker.cs",
+              "ToolTip": "D:\\ObjectiveMeasures\\Library\\PackageCache\\com.htc.upm.vive.openxr@df2fc918e700\\Runtime\\Features\\EyeTracker\\ViveEyeTracker.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.htc.upm.vive.openxr@df2fc918e700\\Runtime\\Features\\EyeTracker\\ViveEyeTracker.cs",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAIwKwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T10:16:21.993Z"
+              "WhenOpened": "2025-08-18T09:59:50.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LazyFollow.cs",
+              "DocumentMoniker": "D:\\ObjectiveMeasures\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@9b07900cb163\\Runtime\\UI\\LazyFollow.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.interaction.toolkit@9b07900cb163\\Runtime\\UI\\LazyFollow.cs",
+              "ToolTip": "D:\\ObjectiveMeasures\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@9b07900cb163\\Runtime\\UI\\LazyFollow.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.xr.interaction.toolkit@9b07900cb163\\Runtime\\UI\\LazyFollow.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG8BAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T11:17:00.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GazeColorChange.cs",
+              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\Scripts\\GazeColorChange.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GazeColorChange.cs",
+              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\Scripts\\GazeColorChange.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GazeColorChange.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T11:25:49.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GazeLineRenderer.cs",
+              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\GazeLineRenderer.cs",
+              "RelativeDocumentMoniker": "Assets\\GazeLineRenderer.cs",
+              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\GazeLineRenderer.cs",
+              "RelativeToolTip": "Assets\\GazeLineRenderer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T10:23:25.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Interactable.cs",
+              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\Scripts\\Interactable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interactable.cs",
+              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\Scripts\\Interactable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interactable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T10:03:19.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GazeInteractor.cs",
+              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\Scripts\\GazeInteractor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GazeInteractor.cs",
+              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\Scripts\\GazeInteractor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GazeInteractor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T09:45:20.447Z"
             }
           ]
         }

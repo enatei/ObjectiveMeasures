@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "action_map",
+    "maps": [
+        {
+            "name": "PC",
+            "id": "54d9c7db-7d28-4836-ad4f-2c781b462103",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "1c3c92b0-d633-409b-bff6-322e61775e7d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c94d3af1-01b9-4ec3-beea-1cbf23708ee6",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
