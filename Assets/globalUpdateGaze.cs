@@ -1,12 +1,12 @@
-﻿using UnityEngine;
+using UnityEngine;
 using VIVE.OpenXR;
 using VIVE.OpenXR.EyeTracker;
 
 
-public class UpdateLeftGaze : MonoBehaviour
+public class globalUpdateGaze : MonoBehaviour
 {
     public Camera Camera;
-    
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,7 +22,7 @@ public class UpdateLeftGaze : MonoBehaviour
 
         if (leftGaze.isValid)
         {
-            transform.localRotation = leftGaze.gazePose.orientation.ToUnityQuaternion();
+            transform.SetPositionAndRotation(leftGaze.gazePose.position.ToUnityVector(), leftGaze.gazePose.orientation.ToUnityQuaternion());
         }
     }
 }
