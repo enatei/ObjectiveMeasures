@@ -5,7 +5,9 @@ using VIVE.OpenXR.EyeTracker;
 
 public class globalUpdateGaze : MonoBehaviour
 {
+
     public Camera Camera;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,7 +24,12 @@ public class globalUpdateGaze : MonoBehaviour
 
         if (leftGaze.isValid)
         {
-            transform.SetPositionAndRotation(leftGaze.gazePose.position.ToUnityVector(), leftGaze.gazePose.orientation.ToUnityQuaternion());
+            Quaternion eyeRotation = leftGaze.gazePose.orientation.ToUnityQuaternion();
+            Quaternion correction = Quaternion.Euler(0, 180, 0);
+            Quaternion fineTune = Quaternion.Euler(0, -45, 0);
+
+            transform.rotation =fineTune * correction * eyeRotation;
+
         }
     }
 }
