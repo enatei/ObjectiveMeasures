@@ -16,8 +16,14 @@ public class ObjectDebugInfo : MonoBehaviour
     private Quaternion leftEyeRot;
     private Vector3 leftEyePos;
 
-    private Vector3 previousEyePos;
-    private Quaternion previousEyeRot;
+    private bool rightGazeValid = true;
+    private Quaternion rightEyeRot;
+    private Vector3 rightEyePos;
+
+    private Vector3 previousLeftEyePos;
+    private Quaternion previousLeftEyeRot;
+    private Vector3 previousRightEyePos;
+    private Quaternion previousRightEyeRot;
 
 
 
@@ -38,20 +44,35 @@ public class ObjectDebugInfo : MonoBehaviour
     void Update()
     {
         XR_HTC_eye_tracker.Interop.GetEyeGazeData(out XrSingleEyeGazeDataHTC[] out_gazes);
-        XrSingleEyeGazeDataHTC leftGaze = out_gazes[(int)XrEyePositionHTC.XR_EYE_POSITION_LEFT_HTC];
+        XrSingleEyeGazeDataHTC leftGaze = out_gazes[(int)XrEyePositionHTC.XR_EYE_POSITION_LEFT_HTC]; 
+        XrSingleEyeGazeDataHTC rightGaze = out_gazes[(int)XrEyePositionHTC.XR_EYE_POSITION_RIGHT_HTC];
 
         if (leftGaze.isValid)
         {
             if (leftEyePos != null && leftEyeRot != null)
             {
-                previousEyePos = leftEyePos;
-                previousEyeRot = leftEyeRot;
+                previousLeftEyePos = leftEyePos;
+                previousLeftEyeRot = leftEyeRot;
             }
 
 
             leftGazeValid = true;
             leftEyeRot = leftGaze.gazePose.orientation.ToUnityQuaternion();
             leftEyePos = leftGaze.gazePose.position.ToUnityVector();
+        }
+
+        if (rightGaze.isValid)
+        {
+            if (rightEyePos != null && rightEyeRot != null)
+            {
+                previousRightEyePos = rightEyePos;
+                previousRightEyeRot = rightEyeRot;
+            }
+
+
+            rightGazeValid = true;
+            rightEyeRot = rightGaze.gazePose.orientation.ToUnityQuaternion();
+            rightEyePos = rightGaze.gazePose.position.ToUnityVector();
         }
 
     }
@@ -75,7 +96,7 @@ public class ObjectDebugInfo : MonoBehaviour
                       $"localRotation:\nX: {localRot.x:F1}°, Y: {localRot.y:F1}°, Z: {localRot.z:F1}\n°" +
                       $"object forward:\nX: {objectForward.x:F2}, Y: {objectForward.y:F2}, Z: {objectForward.z:F2}\n";
 
-        if (leftGazeValid)
+        if (leftGazeValid && rightGazeValid)
         {
             Vector3 cameraRot = transform.eulerAngles;
             Vector3 cameraPos = transform.position;
@@ -83,14 +104,18 @@ public class ObjectDebugInfo : MonoBehaviour
 
             info += $"\nCamera Position:\nX: {cameraPos.x:F2}, Y: {cameraPos.y:F2}, Z: {cameraPos.z:F2}\n" +
                     $"Camera Rotation:\nX: {cameraRot.x:F1}°, Y: {cameraRot.y:F1}°, Z: {cameraRot.z:F1}°\n" +
-                    $"\nCamera Forward:\nX: {cameraForward.x:F2}, Y: {cameraForward.y:F2}, Z: {cameraForward.z:F2}\n" +
-                    $"New Eye Position:\nX: {leftEyePos.x:F2}, Y: {leftEyePos.y:F2}, Z: {leftEyePos.z:F2}\n" +
-                    $"New Eye Rotation:\nX: {leftEyeRot.eulerAngles.x:F1}°, Y: {leftEyeRot.eulerAngles.y:F1}°, Z: {leftEyeRot.eulerAngles.z:F1}°\n";
+                    $"Camera Forward:\nX: {cameraForward.x:F2}, Y: {cameraForward.y:F2}, Z: {cameraForward.z:F2}\n" +
+                    $"New Eye Position (left):\nX: {leftEyePos.x:F2}, Y: {leftEyePos.y:F2}, Z: {leftEyePos.z:F2}\n" +
+                    $"New Eye Rotation (left):\nX: {leftEyeRot.eulerAngles.x:F1}°, Y: {leftEyeRot.eulerAngles.y:F1}°, Z: {leftEyeRot.eulerAngles.z:F1}°\n" +
+                    $"New Eye Position (right):\nX: {rightEyePos.x:F2}, Y: {rightEyePos.y:F2}, Z: {rightEyePos.z:F2}\n" +
+                    $"New Eye Rotation (right):\nX: {rightEyeRot.eulerAngles.x:F1}°, Y: {rightEyeRot.eulerAngles.y:F1}°, Z: {rightEyeRot.eulerAngles.z:F1}°\n";
 
-            if (previousEyeRot != null && previousEyeRot != null)
+            if (previousLeftEyeRot != null && previousLeftEyeRot != null && previousRightEyePos != null && previousRightEyeRot != null)
             {
-                info += $"Old Eye Position:\nX: {previousEyePos.x:F2}, Y: {previousEyePos.y:F2}, Z: {previousEyePos.z:F2}\n" +
-                 $"Old Eye Rotation:\nX: {previousEyeRot.eulerAngles.x:F1}°, Y: {previousEyeRot.eulerAngles.y:F1}°, Z: {previousEyeRot.eulerAngles.z:F1}°\n";
+                info += $"Old Eye Position (left):\nX: {previousLeftEyePos.x:F2}, Y: {previousLeftEyePos.y:F2}, Z: {previousLeftEyePos.z:F2}\n" +
+                 $"Old Eye Rotation (left):\nX: {previousLeftEyeRot.eulerAngles.x:F1}°, Y: {previousLeftEyeRot.eulerAngles.y:F1}°, Z: {previousLeftEyeRot.eulerAngles.z:F1}°\n" +
+                 $"Old Eye Position (right):\nX: {previousRightEyePos.x:F2}, Y: {previousRightEyePos.y:F2}, Z: {previousRightEyePos.z:F2}\n" +
+                 $"Old Eye Rotation (right):\nX: {previousRightEyeRot.eulerAngles.x:F1}°, Y: {previousRightEyeRot.eulerAngles.y:F1}°, Z: {previousRightEyeRot.eulerAngles.z:F1}°\n";
             }
         }
         else
