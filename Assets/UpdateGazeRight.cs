@@ -31,7 +31,7 @@ public class UpdateGazeRight : MonoBehaviour
         {
             Quaternion eyeRotation = rightGaze.gazePose.orientation.ToUnityQuaternion();
             Quaternion correction = Quaternion.Euler(0, 180, 0);
-            Quaternion fineTune = Quaternion.Euler(0, -45, 0);
+            Quaternion fineTune = Quaternion.Euler(0, -50, 0);
             //Quaternion fineTune = Quaternion.Euler(0, -55, 0);
 
 

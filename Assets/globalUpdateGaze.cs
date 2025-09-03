@@ -39,7 +39,7 @@ public class globalUpdateGaze : MonoBehaviour
         {
             Quaternion eyeRotation = leftGaze.gazePose.orientation.ToUnityQuaternion();
             Quaternion correction = Quaternion.Euler(0, 180, 0);
-            Quaternion fineTune = Quaternion.Euler(0, -45, 0);
+            Quaternion fineTune = Quaternion.Euler(0, -50, 0);
             //Quaternion fineTune = Quaternion.Euler(0, -55, 0);
             transform.rotation = fineTune * correction * eyeRotation;
         }
