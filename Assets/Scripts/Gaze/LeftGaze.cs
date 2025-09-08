@@ -3,7 +3,7 @@ using VIVE.OpenXR;
 using VIVE.OpenXR.EyeTracker;
 
 
-public class globalUpdateGaze : MonoBehaviour
+public class LeftGaze : MonoBehaviour
 {
 
     public Camera Camera;
@@ -22,7 +22,9 @@ public class globalUpdateGaze : MonoBehaviour
             Vector3 left = leftGaze.gazePose.position.ToUnityVector();
             Vector3 right = rightGaze.gazePose.position.ToUnityVector();
             Vector3 center = (left + right) / 2f;
-            transform.localPosition = left - center;
+            Vector3 newPos = left - center;
+            //newPos.y = 0.3f;
+            transform.localPosition = newPos;
 
         }
 
@@ -39,8 +41,8 @@ public class globalUpdateGaze : MonoBehaviour
         {
             Quaternion eyeRotation = leftGaze.gazePose.orientation.ToUnityQuaternion();
             Quaternion correction = Quaternion.Euler(0, 180, 0);
-            Quaternion fineTune = Quaternion.Euler(0, -50, 0);
-            //Quaternion fineTune = Quaternion.Euler(0, -55, 0);
+            Quaternion fineTune = Quaternion.Euler(0, -52.5f, 0);
+
             transform.rotation = fineTune * correction * eyeRotation;
         }
     }

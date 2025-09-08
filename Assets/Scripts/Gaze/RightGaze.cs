@@ -2,7 +2,7 @@ using UnityEngine;
 using VIVE.OpenXR.EyeTracker;
 using VIVE.OpenXR;
 
-public class UpdateGazeRight : MonoBehaviour
+public class RightGaze : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,8 +31,7 @@ public class UpdateGazeRight : MonoBehaviour
         {
             Quaternion eyeRotation = rightGaze.gazePose.orientation.ToUnityQuaternion();
             Quaternion correction = Quaternion.Euler(0, 180, 0);
-            Quaternion fineTune = Quaternion.Euler(0, -50, 0);
-            //Quaternion fineTune = Quaternion.Euler(0, -55, 0);
+            Quaternion fineTune = Quaternion.Euler(0, -48, 0);
 
 
             transform.rotation = fineTune * correction * eyeRotation;

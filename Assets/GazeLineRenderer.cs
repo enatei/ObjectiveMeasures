@@ -3,13 +3,17 @@ using UnityEngine;
 
 public class GazeLineRenderer : MonoBehaviour
 {
-    public float distance = 50f;
-    public LineRenderer lineRenderer;
+    public float distance;
+    LineRenderer lineRenderer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        lineRenderer = GetComponent<LineRenderer>();
+        lineRenderer.startWidth = 0.02f;
+        lineRenderer.endWidth = 0.02f;
+        lineRenderer.positionCount = 2;
+
     }
 
     // Update is called once per frame
