@@ -25,6 +25,10 @@ public class ObjectDebugInfo : MonoBehaviour
     private Vector3 previousRightEyePos;
     private Quaternion previousRightEyeRot;
 
+    private XrVector2f rightPupilPos;
+    private XrVector2f leftPupilPos;
+    private bool pupilPosValid = false;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -47,6 +51,10 @@ public class ObjectDebugInfo : MonoBehaviour
         XrSingleEyeGazeDataHTC leftGaze = out_gazes[(int)XrEyePositionHTC.XR_EYE_POSITION_LEFT_HTC]; 
         XrSingleEyeGazeDataHTC rightGaze = out_gazes[(int)XrEyePositionHTC.XR_EYE_POSITION_RIGHT_HTC];
 
+        XR_HTC_eye_tracker.Interop.GetEyePupilData(out XrSingleEyePupilDataHTC[] out_pupils);
+        XrSingleEyePupilDataHTC rightPupil = out_pupils[(int)XrEyePositionHTC.XR_EYE_POSITION_RIGHT_HTC];
+        XrSingleEyePupilDataHTC leftPupil = out_pupils[(int)XrEyePositionHTC.XR_EYE_POSITION_LEFT_HTC];
+
         if (leftGaze.isValid)
         {
             if (leftEyePos != null && leftEyeRot != null)
@@ -59,6 +67,8 @@ public class ObjectDebugInfo : MonoBehaviour
             leftGazeValid = true;
             leftEyeRot = leftGaze.gazePose.orientation.ToUnityQuaternion();
             leftEyePos = leftGaze.gazePose.position.ToUnityVector();
+            pupilPosValid = true;
+            leftPupilPos = leftPupil.pupilPosition;
         }
 
         if (rightGaze.isValid)
@@ -73,6 +83,7 @@ public class ObjectDebugInfo : MonoBehaviour
             rightGazeValid = true;
             rightEyeRot = rightGaze.gazePose.orientation.ToUnityQuaternion();
             rightEyePos = rightGaze.gazePose.position.ToUnityVector();
+            rightPupilPos = rightPupil.pupilPosition;
         }
 
     }
@@ -93,8 +104,7 @@ public class ObjectDebugInfo : MonoBehaviour
         string info = $"globalPosition:\nX: {pos.x:F2}, Y: {pos.y:F2}, Z: {pos.z:F2}\n" +
                       $"globalRotation:\nX: {rot.x:F1}°, Y: {rot.y:F1}°, Z: {rot.z:F1}°\n" +
                       $"localPosition:\nX: {localPos.x:F2}, Y: {localPos.y:F2}, Z: {localPos.z:F2}\n" +
-                      $"localRotation:\nX: {localRot.x:F1}°, Y: {localRot.y:F1}°, Z: {localRot.z:F1}\n°" +
-                      $"object forward:\nX: {objectForward.x:F2}, Y: {objectForward.y:F2}, Z: {objectForward.z:F2}\n";
+                      $"localRotation:\nX: {localRot.x:F1}°, Y: {localRot.y:F1}°, Z: {localRot.z:F1}\n";
 
         if (leftGazeValid && rightGazeValid)
         {
@@ -104,7 +114,6 @@ public class ObjectDebugInfo : MonoBehaviour
 
             info += $"\nCamera Position:\nX: {cameraPos.x:F2}, Y: {cameraPos.y:F2}, Z: {cameraPos.z:F2}\n" +
                     $"Camera Rotation:\nX: {cameraRot.x:F1}°, Y: {cameraRot.y:F1}°, Z: {cameraRot.z:F1}°\n" +
-                    $"Camera Forward:\nX: {cameraForward.x:F2}, Y: {cameraForward.y:F2}, Z: {cameraForward.z:F2}\n" +
                     $"New Eye Position (left):\nX: {leftEyePos.x:F2}, Y: {leftEyePos.y:F2}, Z: {leftEyePos.z:F2}\n" +
                     $"New Eye Rotation (left):\nX: {leftEyeRot.eulerAngles.x:F1}°, Y: {leftEyeRot.eulerAngles.y:F1}°, Z: {leftEyeRot.eulerAngles.z:F1}°\n" +
                     $"New Eye Position (right):\nX: {rightEyePos.x:F2}, Y: {rightEyePos.y:F2}, Z: {rightEyePos.z:F2}\n" +
@@ -117,6 +126,14 @@ public class ObjectDebugInfo : MonoBehaviour
                  $"Old Eye Position (right):\nX: {previousRightEyePos.x:F2}, Y: {previousRightEyePos.y:F2}, Z: {previousRightEyePos.z:F2}\n" +
                  $"Old Eye Rotation (right):\nX: {previousRightEyeRot.eulerAngles.x:F1}°, Y: {previousRightEyeRot.eulerAngles.y:F1}°, Z: {previousRightEyeRot.eulerAngles.z:F1}°\n";
             }
+            
+
+            /*if (pupilPosValid)
+            {
+                info += $"Left Pupil Position: \n: ({leftPupilPos.x:F2}, {leftPupilPos.y:F2})\n" +
+                    $"Right Pupil Position: \n: ({rightPupilPos.x:F2}, {rightPupilPos.y:F2})";
+            }
+            */
         }
         else
         {
