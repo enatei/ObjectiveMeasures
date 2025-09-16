@@ -3,7 +3,7 @@ using UnityEngine.XR.Interaction.Toolkit.Attachment;
 
 public class GazeInteractor : MonoBehaviour
 {
-    public float distance = 30f;
+    public float distance;
     private Interactable currentInteractable;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
