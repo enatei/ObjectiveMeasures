@@ -24,6 +24,7 @@ public class ObjectDebugInfo : MonoBehaviour
     private Quaternion previousLeftEyeRot;
     private Vector3 previousRightEyePos;
     private Quaternion previousRightEyeRot;
+    private Quaternion combinedEyeRotation;
 
     private XrVector2f rightPupilPos;
     private XrVector2f leftPupilPos;
@@ -86,6 +87,9 @@ public class ObjectDebugInfo : MonoBehaviour
             rightPupilPos = rightPupil.pupilPosition;
         }
 
+        
+        combinedEyeRotation = Quaternion.Slerp(rightEyeRot, leftEyeRot, 0.5f);
+
     }
 
     void OnGUI()
@@ -114,10 +118,11 @@ public class ObjectDebugInfo : MonoBehaviour
 
             info += $"\nCamera Position:\nX: {cameraPos.x:F2}, Y: {cameraPos.y:F2}, Z: {cameraPos.z:F2}\n" +
                     $"Camera Rotation:\nX: {cameraRot.x:F1}°, Y: {cameraRot.y:F1}°, Z: {cameraRot.z:F1}°\n" +
-                    $"New Eye Position (left):\nX: {leftEyePos.x:F2}, Y: {leftEyePos.y:F2}, Z: {leftEyePos.z:F2}\n" +
+                    //$"New Eye Position (left):\nX: {leftEyePos.x:F2}, Y: {leftEyePos.y:F2}, Z: {leftEyePos.z:F2}\n" +
                     $"New Eye Rotation (left):\nX: {leftEyeRot.eulerAngles.x:F1}°, Y: {leftEyeRot.eulerAngles.y:F1}°, Z: {leftEyeRot.eulerAngles.z:F1}°\n" +
-                    $"New Eye Position (right):\nX: {rightEyePos.x:F2}, Y: {rightEyePos.y:F2}, Z: {rightEyePos.z:F2}\n" +
-                    $"New Eye Rotation (right):\nX: {rightEyeRot.eulerAngles.x:F1}°, Y: {rightEyeRot.eulerAngles.y:F1}°, Z: {rightEyeRot.eulerAngles.z:F1}°\n";
+                    //$"New Eye Position (right):\nX: {rightEyePos.x:F2}, Y: {rightEyePos.y:F2}, Z: {rightEyePos.z:F2}\n" +
+                    $"New Eye Rotation (right):\nX: {rightEyeRot.eulerAngles.x:F1}°, Y: {rightEyeRot.eulerAngles.y:F1}°, Z: {rightEyeRot.eulerAngles.z:F1}°\n" +
+                    $"Combined Eye Rotation: \nX: {combinedEyeRotation.eulerAngles.x:F1}°, Y: {combinedEyeRotation.eulerAngles.y:F1}°, Z: {combinedEyeRotation.eulerAngles.z:F1}°\n";
 
             if (previousLeftEyeRot != null && previousLeftEyeRot != null && previousRightEyePos != null && previousRightEyeRot != null)
             {

@@ -58,7 +58,7 @@ public class CombinedGaze : MonoBehaviour
             lineRenderer.SetPosition(0, ray.origin);
             lineRenderer.SetPosition(1, endPoint);
 
-            /*if (Physics.Raycast(ray, out hit, distance))
+            if (Physics.Raycast(ray, out hit, distance))
             {
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
                 if (interactable != null)
@@ -88,7 +88,7 @@ public class CombinedGaze : MonoBehaviour
                     currentInteractable.OnGazeExit();
                     currentInteractable = null;
                 }
-            }*/
+            }
 
         }
     }

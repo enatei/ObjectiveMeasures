@@ -286,8 +286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a3adb2a9c4ba574781cbc4671c0c37d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  distance: 0
+  camera: {fileID: 1346999786}
+  distance: 500
 --- !u!120 &457444381
 LineRenderer:
   serializedVersion: 2
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1e058c8b6b58e478241d08ad3282cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 100
+  distance: 500
 --- !u!1 &573608285
 GameObject:
   m_ObjectHideFlags: 0

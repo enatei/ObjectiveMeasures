@@ -20,7 +20,7 @@ public class Interactable : MonoBehaviour
 
     public void OnGazeEnter()
     {
-        _renderer.material.SetColor("_BaseColor", Color.yellow);
+        _renderer.material.color = Color.yellow;
     }
 
     public void OnGazeExit()
