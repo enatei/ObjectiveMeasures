@@ -26,6 +26,6 @@ Thumbs.db
 .vs/
 
 # Written files
-*.Pre/
-*.Post/
+Assets/Pre/
+Assets/Post/
 
