@@ -1,26 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ObjectiveMeasures\\",
+  "WorkspaceRootPath": "C:\\Users\\natas\\Desktop\\ObjectiveMeasures\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|d:\\objectivemeasures\\assets\\scripts\\randomcolormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\randomcolormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|c:\\users\\natas\\desktop\\objectivemeasures\\assets\\scripts\\ssq\\ssq_text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ssq\\ssq_text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|D:\\ObjectiveMeasures\\assets\\scripts\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|D:\\ObjectiveMeasures\\assets\\scripts\\gazeinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gazeinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|D:\\ObjectiveMeasures\\assets\\scripts\\gaze\\combinedgaze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gaze\\combinedgaze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|D:\\ObjectiveMeasures\\assets\\scripts\\objectdebuginfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectdebuginfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|c:\\users\\natas\\desktop\\objectivemeasures\\assets\\scripts\\blinks\\eyeblinkcounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC88DCA-8862-1790-F742-B85AABA1EFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\blinks\\eyeblinkcounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RandomColorManager.cs",
-              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\Scripts\\RandomColorManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\RandomColorManager.cs",
-              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\Scripts\\RandomColorManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\RandomColorManager.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T13:15:07.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GazeInteractor.cs",
-              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\Scripts\\GazeInteractor.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GazeInteractor.cs",
-              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\Scripts\\GazeInteractor.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GazeInteractor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T12:30:35.53Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Interactable.cs",
-              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\Scripts\\Interactable.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Interactable.cs",
-              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\Scripts\\Interactable.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Interactable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAlAAAA",
+              "Title": "EyeBlinkCounter.cs",
+              "DocumentMoniker": "C:\\Users\\natas\\Desktop\\ObjectiveMeasures\\Assets\\Scripts\\Blinks\\EyeBlinkCounter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Blinks\\EyeBlinkCounter.cs",
+              "ToolTip": "C:\\Users\\natas\\Desktop\\ObjectiveMeasures\\Assets\\Scripts\\Blinks\\EyeBlinkCounter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Blinks\\EyeBlinkCounter.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T11:25:01.339Z",
+              "WhenOpened": "2025-11-30T15:44:37.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ObjectDebugInfo.cs",
-              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\Scripts\\ObjectDebugInfo.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectDebugInfo.cs",
-              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\Scripts\\ObjectDebugInfo.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ObjectDebugInfo.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAYwHwAAAAXAAAA",
+              "DocumentIndex": 0,
+              "Title": "SSQ_Text.cs",
+              "DocumentMoniker": "C:\\Users\\natas\\Desktop\\ObjectiveMeasures\\Assets\\Scripts\\SSQ\\SSQ_Text.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SSQ\\SSQ_Text.cs",
+              "ToolTip": "C:\\Users\\natas\\Desktop\\ObjectiveMeasures\\Assets\\Scripts\\SSQ\\SSQ_Text.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SSQ\\SSQ_Text.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAkwGEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T10:54:35.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CombinedGaze.cs",
-              "DocumentMoniker": "D:\\ObjectiveMeasures\\Assets\\Scripts\\Gaze\\CombinedGaze.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gaze\\CombinedGaze.cs",
-              "ToolTip": "D:\\ObjectiveMeasures\\Assets\\Scripts\\Gaze\\CombinedGaze.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Gaze\\CombinedGaze.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAIwDwAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T10:37:22.49Z"
+              "WhenOpened": "2025-11-30T15:42:23.701Z",
+              "EditorCaption": ""
             }
           ]
         }
